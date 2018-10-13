@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="back.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+    body {
+       margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+      color: #777;
+      background: url('back.jpg');
+      background-size: cover;
+  }
+  #back{
+    color: white;
+    margin-left: 20px;
+  }
+  .bg-3 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 800px;
+    margin-top: 40px;
+}
+.containered-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .readmore{
+    margin-left: 500px;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="navnav"><img src="back.png" class="navbar-brand" style="height: 55px;width: 55px;">
+      <a class="navbar-brand" href="#myPage">Rocket Launch Scoop</a></div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">india</a></li>
+        <li><a href="#">VSSC</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span><?php 
+              include("profile.php")
+          ?> </span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">profile</a></li>
+            <li><a href="login.html">logout</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav><br><br><br>
+<div>
+  <h1 id="back">Recent Updates</h1><br><br>
+  <div id="updates" class="container-fluid bg-3 text-center containered-fluid"><h1>heading1</h1>
+    <p>data</p><p>data</p><p>data</p><p class="readmore"><a href="data.html">Read more...</a></p></div><br>
+  <div id="updates" class="container-fluid bg-3 text-center containered-fluid"><h1>heading2</h1>
+    <p>data</p><p>data</p><p>data</p><p class="readmore"><a href="data.html">Read more...</a></p></div><br>
+    <div id="updates" class="container-fluid bg-3 text-center containered-fluid"><h1>heading3</h1>
+    <p>data</p><p>data</p><p>data</p><p class="readmore"><a href="data.html">Read more...</a></p></div><br>
+    <div id="updates" class="container-fluid bg-3 text-center containered-fluid"><h1>heading4</h1>
+    <p>data</p><p>data</p><p>data</p><p class="readmore"><a href="data.html">Read more...</a></p></div><br>
+    <div id="updates" class="container-fluid bg-3 text-center containered-fluid"><h1>heading5</h1>
+    <p>data</p><p>data</p><p>data</p><p class="readmore"><a href="data.html">Read more...</a></p></div><br>
+    <div id="updates" class="container-fluid bg-3 text-center containered-fluid"><h1>heading6</h1>
+    <p>data</p><p>data</p><p>data</p><p class="readmore"><a href="data.html">Read more...</a></p></div><br>
+</div>
+
+</body>
+</html>
