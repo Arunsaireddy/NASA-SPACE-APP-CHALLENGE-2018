@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Community</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="http://localhost/Rocket_Lance_Scoop/images/back.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://localhost/Rocket_Lance_Scoop/CSS/style.css">
+  <style type="text/css">
+   }
+  .bg-3 {
+    background-color: #ffffff;
+    color: #555555;
+    width: 800px;
+    margin-top: 40px;
+    box-shadow: 0 0 14px 0px black;
+}
+.add{
+  height: 40px;width: 200px; margin-left: 800px;
+}
+p{
+  display: flex;
+  flex-direction: row;
+}
+  </style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="navnav"><img src="http://localhost/Rocket_Lance_Scoop/images/back.png" class="navbar-brand" style="height: 55px;width: 55px;">
+      <a class="navbar-brand" href="#myPage">Rocket Launch Scoop</a></div>
+    </div>
+    
+  </div>
+</nav>
+
+<br><br><br>
+<div id="new" class="container-fluid">
+  <center><h1>Upload a new topic here</h1></center><br>
+    
+  <form method="post" action="http://localhost/Rocket_Lance_Scoop/PHP/conn.php">
+    <h1>Space station</h1>
+    <select name="center" style="height: 30px;width: 300px;">
+  <option value="vssc">vssc</option>
+  <option value="lpsc">lpsc</option>
+  <option value="sdsc">sdsc</option>
+  <option value="iprc">iprc</option>
+  <option value="isac">isac</option>
+  <option value="lpsc">langley reaserch center</option>
+  <option value="sdsc">John C</option>
+  <option value="iprc">George C.marshal space flight center</option>
+  <option value="isac">kennedy space center</option>
+</select>
+    
+    <h1>Title</h1>
+    <input type="text" name="title" style="height: 60px;width: 1200px;" required="yes"><br>
+    <h1>Date</h1>
+    <input type="date" name="date" style="height: 60px;width: 1200px;" required="yes"><br>
+    <h1>url</h1>
+    <input type="url" name="url" style="height: 60px;width: 1200px;" required="yes"><br>
+    <h1>description</h1>
+    <textarea name="description" style="height: 300px;width: 1200px" required="yes"></textarea>
+    <h1>uploader</h1>
+    <input type="text" name="uploader" style="height: 30px;width: 200px;" required="yes">
+      <h1>Image</h1>
+      <input type="file" name="image" id="image"><br><br><br>
+    <input type="submit" name="submit" style="height: 40px;width: 200px;">
+
+  </form>
+
+
+</div><br><br><br><br><br>
+
+</body>
+</html>
